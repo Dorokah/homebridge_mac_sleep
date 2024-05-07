@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.YOURNAME.homebridge_mac_sleep</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/REPLACE_THIS_WITH_YOUR_PATH/homebridge_mac_sleep/venv/bin/python</string>
+        <string>-m</string>
+        <string>uvicorn</string>
+        <string>main:app</string>
+        <string>--host</string>
+        <string>0.0.0.0</string>
+        <string>--port</string>
+        <string>8000</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/REPLACE_THIS_WITH_YOUR_PATH/homebridge_mac_sleep</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/REPLACE_THIS_WITH_YOUR_PATH/homebridge_mac_sleep/sleep_mac_server_launchctl.err</string>
+    <key>StandardOutPath</key>
+    <string>/REPLACE_THIS_WITH_YOUR_PATH/homebridge_mac_sleep/sleep_mac_server_launchctl.log</string>
+</dict>
+</plist>
